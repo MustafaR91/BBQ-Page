@@ -26,7 +26,7 @@ img {
 .poster {
     width: 50%;
     height: 100vh;
-    background-image: url(images/ribs.jpg);
+    background-image: url(ribs.jpg);
     background-color: rgba(0,0,0, 0.65);
     background-size: cover;
     background-position: center;

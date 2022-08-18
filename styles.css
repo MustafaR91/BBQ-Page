@@ -1,0 +1,186 @@
+/* Box sizing is VERY VERY VERY VERY IMPORTANT! */
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.poster-bottom {
+    text-transform: uppercase;
+    font-size: 1.3125rem;
+    color: #F18119;
+}
+
+.poster {
+    width: 50%;
+    height: 100vh;
+    background-image: url(images/ribs.jpg);
+    background-color: rgba(0,0,0, 0.65);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    padding: 0 2em;
+}
+
+.poster-top-mid {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: lighter;
+}
+
+span {
+    font-weight: bold;
+}
+
+.poster-top {
+    width: 32.5%;
+    margin: 0 auto;
+    padding: 0.3em 0 0;
+    border-top: 5px solid;
+    border-image: linear-gradient(to left, #FF713B, #FFA51D) 1;
+    text-transform: uppercase;
+    color: #F18119;
+    font-weight: bold;
+}
+
+.poster-top, .privacy {
+    font-size: 0.625rem;
+}
+
+.container {
+    display: flex;
+}
+
+.info h4 {
+    text-transform: uppercase;
+    color: #F18119;
+}
+
+.info {
+    width: 50%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    color: #404040;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 60%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+input,
+button {
+    border-radius: 5px;   
+}
+
+input {
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    text-transform: uppercase;
+    border: none;
+    background: linear-gradient(to left, #FF713B, #FFA51D);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.625rem;
+    padding: 12px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.75s;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.2);
+    color: black;
+}
+
+#fname-label,
+#email-label {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 820px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body, html {
+        font-size: 0.7rem;
+    }
+    
+    .poster {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .poster-mid-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        max-width: 300px;
+    }
+    
+    .info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .info h4 {
+        font-size: 1.15rem;
+    }
+    
+    .info p {
+        font-size: 1rem;
+        max-width: 300px;
+    }
+    
+    input, button {
+        font-size: 1rem;
+    }
+    .info .privacy {
+        font-size: 0.6125rem;
+    }
+    
+}
